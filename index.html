@@ -10,27 +10,25 @@
 </head>
 <body>
 
-  <h1 id="pagetop">Add Takeaway</h1>
+    <h1 id="pagetop">Add Takeaway</h1>
 
   <form id="newTakeawayform">
-    <div id="form">
+      <div id="form">
+  <label for ="takeawayName">Takeaway Name: </label>
   <input type="text" id="name" required/>
 
   <label for="jackRating">Jack's Rating (Between 0 - 5): </label>
-  <input type="number" class="rating" id ="jackRating">
+  <input type="number" min= 0 max= 5 id ="jackRating">
 
   <label for="mitchellRating">Mitchell's Rating (Between 0 - 5): </label>
-  <input type="number" id ="mitchellRating">
-
-  <label for="wouldGetAgain">Would Get Again?:</label>
-  <input type="checkbox" class ="rating" id="wouldGetAgain">
+  <input type="number" min= 0 max =5 id ="mitchellRating">
 
   <label for ="type">Type: </label>
   <select name="type" id="type">
     <option value="Chippy">Chippy</option>
     <option value="Indian">Indian</option>
     <option value="Chinese">Chinese</option>
-    <option value="FastFood">Fast Food</option>
+    <option value="Fast Food">Fast Food</option>
 </select>
 
 <input type="submit" value="save"/>

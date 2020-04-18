@@ -16,7 +16,7 @@ const handleNewTakeawayFormSubmit = function (event) {
 
 const createNewTakeaway = function (form) {
 
-  const takeawayData = document.createElement('li');
+  const takeawayData = document.createElement('p');
   takeawayData.classList.add('#takeaways')
 
   const name = document.createElement('p');
@@ -25,16 +25,12 @@ const createNewTakeaway = function (form) {
 
   const jackRating =
   document.createElement('p')
-  jackRating.textContent = form.jackRating.value;
+  jackRating.textContent = `Jack's Rating: ${form.jackRating.value}`;
   takeawayData.appendChild(jackRating);
 
   const mitchellRating = document.createElement('p')
-  mitchellRating.textContent = form.mitchellRating.value;
+  mitchellRating.textContent = `Mitchell's Rating: ${form.mitchellRating.value}`;
   takeawayData.appendChild(mitchellRating);
-
-  const wouldGetAgain = document.createElement('p')
-  wouldGetAgain.textContent = form.wouldGetAgain.value;
-  takeawayData.appendChild(wouldGetAgain);
 
   const type = document.createElement('p')
   type.textContent = form.type.value;
