@@ -20,7 +20,7 @@ const handleNewTakeawayFormSubmit = function (event) {
 const createNewTakeaway = function (form) {
 
   const takeawayData = document.createElement('p');
-  takeawayData.classList.add('#takeaways')
+  takeawayData.classList.add('takeaways')
 
   const name = document.createElement('p');
   name.textContent = `Takeaway Name: ${form.name.value}`;
@@ -36,7 +36,7 @@ const createNewTakeaway = function (form) {
   takeawayData.appendChild(mitchellRating);
 
   const type = document.createElement('p')
-  type.textContent = form.type.value;
+  type.textContent = `Type: ${form.type.value}`;
   takeawayData.appendChild(type);
 
   return takeawayData;
