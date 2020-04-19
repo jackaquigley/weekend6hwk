@@ -12,17 +12,22 @@
 
     <h1 id="pagetop">Add Takeaway</h1>
 
+<div id="form">
   <form id="newTakeawayform">
-      <div id="form">
+
+  <div class="nameClass">
   <label for ="takeawayName">Takeaway Name: </label>
   <input type="text" id="name" required/>
+  </div>
 
+  <div class="ratingClass">
   <label for="jackRating">Jack's Rating (Between 0 - 5): </label>
   <input type="number" min= 0 max= 5 id ="jackRating">
 
   <label for="mitchellRating">Mitchell's Rating (Between 0 - 5): </label>
   <input type="number" min= 0 max =5 id ="mitchellRating">
 
+  <div class="typeClass">
   <label for ="type">Type: </label>
   <select name="type" id="type">
     <option value="Chippy">Chippy</option>
@@ -31,11 +36,12 @@
     <option value="Fast Food">Fast Food</option>
 </select>
 
-<input type="submit" value="save"/>
-
+<input type="submit" value="Save Takeaway"/>
 </div>
+
 </form>
 
+<button id  ="deleteAllTakeaways">Delete All Takeaways</button>
 
 <ul id="takeawayData"></ul>
 

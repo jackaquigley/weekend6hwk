@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const newTakeawayform =
   document.querySelector('#newTakeawayform');
   newTakeawayform.addEventListener('submit', handleNewTakeawayFormSubmit);
+
+  const deleteAllTakeawaysButton = document.querySelector('#deleteAllTakeaways')
+  deleteAllTakeawaysButton.addEventListener('click', handleDeleteTakeawaysClick)
 });
 
 const handleNewTakeawayFormSubmit = function (event) {
@@ -38,4 +41,9 @@ const createNewTakeaway = function (form) {
 
   return takeawayData;
 
+}
+
+const handleDeleteTakeawaysClick = function (event) {
+  const takeawayData = document.querySelector('#takeawayData');
+takeawayData.innerHTML = '';
 }
